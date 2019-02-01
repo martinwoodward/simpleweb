@@ -1,5 +1,5 @@
 workflow "Publish to Azure Blob" {
-  on = "push"
+  on = "push" 
   resolves = ["Azure CLI"]
 }
 
