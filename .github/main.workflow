@@ -30,8 +30,6 @@ action "Create Azure Boards Work Item" {
     AZURE_BOARDS_ORGANIZATION = "helios1"
     AZURE_BOARDS_PROJECT = "AllHandsDemo"
     AZURE_BOARDS_TYPE = "Feature"
-    AZURE_BOARDS_TITLE = "<Azure Boards Work Item Title>"
-    AZURE_BOARDS_DESCRIPTION = "<Azure Boards Work Item Description>"
   }
   secrets = ["AZURE_BOARDS_TOKEN"]
 }
