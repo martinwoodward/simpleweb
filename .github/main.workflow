@@ -24,6 +24,11 @@ workflow "Create Feature in AzBoards" {
   resolves = ["Create Azure Boards Work Item"]
 }
 
+workflow "Update Feature comments in AzBoards" {
+  on = "issue_comment"
+  resolves = ["Create Azure Boards Work Item"]
+}
+
 action "Create Azure Boards Work Item" {
   uses = "mmitrik/github-actions/boards@master"
   env = {
