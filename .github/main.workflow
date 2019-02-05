@@ -32,9 +32,9 @@ workflow "Update Feature comments in AzBoards" {
 action "Create Azure Boards Work Item" {
   uses = "mmitrik/github-actions/boards@master"
   env = {
-    AZURE_BOARDS_ORGANIZATION = "helios1"
-    AZURE_BOARDS_PROJECT = "AllHandsDemo"
     AZURE_BOARDS_TYPE = "Feature"
+    AZURE_BOARDS_ORGANIZATION = "AzureBoardsTeam"
+    AZURE_BOARDS_PROJECT = "actions-demo"
   }
   secrets = ["AZURE_BOARDS_TOKEN"]
 }
